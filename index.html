@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- HINWEIS: vorerst noindex, damit Google die Übergangsversion nicht listet.
+     Vor finalem Go-live (nach Verfeinerung) auf "index,follow" stellen. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Imberi Bäder — Familienbetrieb für Badgestaltung in Müllheim seit 1987</title>
+<meta name="description" content="Ihr neues Bad aus einer Hand — geplant, gebaut und übergeben von der Familie Imberi. Festpreis, Fixtermin, ein persönlicher Ansprechpartner. Showroom in Müllheim, Markgräflerland.">
+<link rel="icon" type="image/png" href="assets/Logo_imberi.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Imberi Bäder — Familienbetrieb für Badgestaltung in Müllheim">
+<meta property="og:description" content="Ihr neues Bad aus einer Hand. Festpreis, Fixtermin, persönlich begleitet. Showroom in Müllheim.">
+<meta property="og:image" content="assets/Imberi_Bild_Bad.jpg">
+<meta property="og:locale" content="de_DE">
+
+<!-- Schema.org LocalBusiness (lokale SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Imberi GmbH — Die Badgestalter",
+  "image": "assets/Imberi_Bild_Bad.jpg",
+  "description": "Familienbetrieb für Badgestaltung, Badsanierung, barrierefreie Bäder und Sanitär im Markgräflerland. Seit 1987 in Müllheim.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Haltinger Straße 22",
+    "postalCode": "79379",
+    "addressLocality": "Müllheim",
+    "addressRegion": "Baden-Württemberg",
+    "addressCountry": "DE"
+  },
+  "telephone": "+49 7631 805790",
+  "email": "info@imberi-baeder.de",
+  "areaServed": "Markgräflerland, Müllheim, Lörrach, Weil am Rhein, Bad Krozingen",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "15:00" }
+  ],
+  "founder": "Familie Imberi",
+  "foundingDate": "1987"
+}
+</script>
+
+<style>
+  :root{
+    --blau:#0a3d62;        /* Imberi-Blau (aus Kombilogo cmyk_blau) */
+    --blau-tief:#072a44;
+    --gold:#c9a86a;        /* warmer Premium-Akzent */
+    --hell:#f5f7f9;
+    --grau:#5b6b78;
+    --weiss:#ffffff;
+    --rand:#e3e8ec;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',-apple-system,Helvetica,Arial,sans-serif;color:#1c2b36;line-height:1.6;background:var(--weiss)}
+  h1,h2,h3{font-weight:700;line-height:1.2;color:var(--blau)}
+  h2{font-size:2rem;margin-bottom:.6rem}
+  h3{font-size:1.25rem}
+  p{margin-bottom:1rem}
+  a{color:var(--blau);text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  section{padding:80px 0}
+  .center{text-align:center}
+  .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;font-weight:700;color:var(--gold);margin-bottom:.5rem}
+
+  /* Nav */
+  header.nav{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--rand)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.3rem;color:var(--blau);letter-spacing:.02em}
+  .logo img{height:42px}
+  .nav nav a{margin-left:26px;font-weight:600;color:#33454f;font-size:.95rem}
+  .nav nav a:hover{color:var(--gold)}
+  .btn{display:inline-block;background:var(--gold);color:#fff!important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:.95rem;transition:.2s;border:none;cursor:pointer}
+  .btn:hover{background:#b8965a}
+  .btn-outline{background:transparent;border:2px solid #fff;color:#fff!important}
+  .btn-blau{background:var(--blau)}
+  .btn-blau:hover{background:var(--blau-tief)}
+
+  /* Hero */
+  .hero{position:relative;min-height:96vh;display:flex;align-items:center;color:#fff;background:linear-gradient(rgba(7,42,68,.62),rgba(7,42,68,.72)),url('assets/Imberi_Bild_Bad.jpg') center/cover no-repeat}
+  .hero h1{color:#fff;font-size:4.2rem;margin-bottom:1.2rem}
+  .hero .sub{font-size:1.55rem;max-width:700px;margin-bottom:2.4rem;opacity:.96}
+  .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+
+  /* Trust-Leiste */
+  .trust{background:var(--blau);color:#fff;padding:34px 0}
+  .trust .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+  .trust .num{font-size:2.1rem;font-weight:800;color:#fff}
+  .trust .lbl{font-size:.9rem;opacity:.85}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+  .imgbox{background:var(--hell);border:1px solid var(--rand);border-radius:12px;min-height:340px;display:flex;align-items:center;justify-content:center;color:var(--grau);font-size:.95rem;text-align:center;padding:20px;overflow:hidden}
+  .imgbox img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+  .imgbox.foto{background:linear-gradient(135deg,#0c4470,#062339);color:#cfe0ee;font-weight:600;letter-spacing:.03em}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:var(--weiss);border:1px solid var(--rand);border-radius:12px;padding:30px;box-shadow:0 4px 24px rgba(10,61,98,.05)}
+  .card .ic{width:48px;height:48px;border-radius:10px;background:var(--hell);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px}
+  .alt-bg{background:var(--hell)}
+
+  /* DISC-Emotions-Töne: zarte, unscharfe Hintergründe je Karte.
+     Solange kein eigenes Bild abgelegt ist, trägt die Karte nur ihren weichen Farbton. */
+  .card{background-repeat:no-repeat;background-size:cover;background-position:center}
+  .card.tone-d{background-image:linear-gradient(rgba(255,249,246,.92),rgba(255,252,250,.96))} /* Rot/Dominant – Energie */
+  .card.tone-i{background-image:linear-gradient(rgba(255,251,238,.92),rgba(255,253,246,.96))} /* Gelb/Initiativ – Freude */
+  .card.tone-s{background-image:linear-gradient(rgba(239,247,242,.91),rgba(247,251,248,.95))} /* Grün/Stetig – Vertrauen */
+  .card.tone-c{background-image:linear-gradient(rgba(237,244,250,.91),rgba(246,250,253,.95))} /* Blau/Gewissenhaft – Klarheit */
+
+  .fam{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:30px}
+  .person{text-align:center}
+  .person .foto{aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,var(--blau),var(--blau-tief));border:1px solid var(--rand);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.6rem;font-weight:800;letter-spacing:.04em;margin-bottom:12px}
+  .person .name{font-weight:700;color:var(--blau)}
+  .person .rolle{font-size:.85rem;color:var(--grau)}
+
+  .timeline{border-left:3px solid var(--gold);margin:30px 0 0;padding-left:28px}
+  .tl-item{margin-bottom:26px;position:relative}
+  .tl-item::before{content:'';position:absolute;left:-37px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+  .tl-item .jahr{font-weight:800;color:var(--blau)}
+
+  .quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .quote{background:var(--weiss);border:1px solid var(--rand);border-radius:12px;padding:28px}
+  .stars{color:var(--gold);font-size:1.1rem;margin-bottom:10px}
+  .quote .who{font-weight:700;color:var(--blau);margin-top:10px;font-size:.9rem}
+
+  .cta-band{background:var(--blau);color:#fff;text-align:center}
+  .cta-band h2{color:#fff}
+
+  .mapbox{border:0;width:100%;height:340px;border-radius:12px;filter:grayscale(.1)}
+
+  footer{background:var(--blau-tief);color:#c5d3de;padding:50px 0 30px;font-size:.92rem}
+  footer .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-bottom:30px}
+  footer h4{color:#fff;margin-bottom:12px;font-size:1rem}
+  footer a{color:#c5d3de}
+  footer a:hover{color:#fff}
+  .feinprint{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:.82rem;opacity:.7}
+
+  /* Promo-Banner Enthärtung */
+  .promo{position:relative;overflow:hidden;display:flex;align-items:center;gap:40px;background:linear-gradient(135deg,#0c4470,#062339);border-radius:16px;padding:46px 54px;color:#fff;cursor:pointer;box-shadow:0 14px 44px rgba(7,42,68,.28);transition:.2s}
+  .promo:hover{transform:translateY(-3px);box-shadow:0 20px 56px rgba(7,42,68,.36)}
+  .promo .txt{flex:1;z-index:2}
+  .promo .txt .small{font-size:1.05rem;opacity:.92;margin-bottom:8px}
+  .promo .txt .big{font-size:2.3rem;font-weight:800;color:#fff;line-height:1.08;letter-spacing:.01em}
+  .promo .right{position:relative;display:flex;align-items:center;gap:18px;z-index:2}
+  .promo .badge{width:148px;height:148px;border-radius:50%;background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-size:.92rem;line-height:1.25;transform:rotate(-7deg);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+
+  /* Modal / Pop-up */
+  .modal-overlay{position:fixed;inset:0;background:rgba(7,42,68,.62);backdrop-filter:blur(3px);z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
+  .modal-overlay.open{display:flex}
+  .modal{background:#fff;border-radius:16px;max-width:560px;width:100%;padding:44px;position:relative;box-shadow:0 24px 70px rgba(0,0,0,.35);animation:pop .22s ease}
+  @keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
+  .modal-close{position:absolute;top:12px;right:18px;border:none;background:none;font-size:2rem;color:var(--grau);cursor:pointer;line-height:1}
+  .modal-close:hover{color:var(--blau)}
+  .modal .kontakt-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+
+  @media(max-width:860px){
+    .grid2,.cards,.trust .grid,.fam,.quotes,footer .grid{grid-template-columns:1fr}
+    .promo{flex-direction:column;text-align:center;padding:34px}
+    .hero h1{font-size:2.4rem}
+    .nav nav{display:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap">
+    <div class="logo">
+      <img src="assets/Logo_imberi.png" alt="Imberi" onerror="this.style.display='none'">
+      <span>IMBERI<span style="color:var(--gold)">.</span>BAD</span>
+    </div>
+    <nav>
+      <a href="#familie">Familie</a>
+      <a href="#geschichte">Geschichte</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#showroom">Showroom</a>
+      <a href="#stimmen">Stimmen</a>
+      <a href="#kontakt" class="btn btn-blau" style="padding:9px 18px">Termin anfragen</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold)">Familienbetrieb in Müllheim · seit 1987</div>
+    <h1>Zuhören.<br>Umsetzen.<br>Glücklich machen.</h1>
+    <p class="sub">Ihr neues Bad aus einer Hand — geplant, gebaut und übergeben von einer Familie, die seit über 30 Jahren im Markgräflerland zuhause ist.</p>
+    <div class="cta-row">
+      <a href="#kontakt" class="btn">Persönliches Beratungsgespräch</a>
+      <a href="#showroom" class="btn btn-outline">Showroom in Müllheim erleben</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST-LEISTE ============ -->
+<section class="trust" style="padding:34px 0">
+  <div class="wrap">
+    <div class="grid">
+      <div><div class="num">1987</div><div class="lbl">gegründet · Familienbetrieb</div></div>
+      <div><div class="num">30+</div><div class="lbl">Jahre Erfahrung</div></div>
+      <div><div class="num">Festpreis</div><div class="lbl">& verbindlicher Fixtermin</div></div>
+      <div><div class="num">1</div><div class="lbl">persönlicher Ansprechpartner</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAMILIE ============ -->
+<section id="familie">
+  <div class="wrap">
+    <div class="grid2">
+      <div>
+        <div class="eyebrow">Die Menschen hinter Imberi</div>
+        <h2>Eine Familie. Ein Versprechen.</h2>
+        <p>Bei uns sprechen Sie nicht mit einer Hotline, sondern mit der Familie Imberi selbst. Was 1987 begann, führen wir heute weiter — mit demselben Anspruch: Ihr Bad wird so, wie Sie es sich erträumt haben.</p>
+        <p>Persönlich, verlässlich und in der Region verwurzelt. Vom ersten Gespräch bis zur Übergabe begleitet Sie ein fester Ansprechpartner.</p>
+      </div>
+      <div class="imgbox">
+        <img src="assets/Imberi_Bild_Bad.jpg" alt="Bad von Imberi">
+      </div>
+    </div>
+
+    <div class="fam">
+      <div class="person">
+        <div class="foto">DI</div>
+        <div class="name">Dirk Imberi</div>
+        <div class="rolle">Geschäftsführer</div>
+      </div>
+      <div class="person">
+        <div class="foto">UI</div>
+        <div class="name">Ute Imberi</div>
+        <div class="rolle">Verwaltung &amp; Finanzen</div>
+      </div>
+      <div class="person">
+        <div class="foto">T</div>
+        <div class="name">Tina</div>
+        <div class="rolle">Innendienst &amp; Beratung</div>
+      </div>
+      <div class="person">
+        <div class="foto">HI</div>
+        <div class="name">Horst Imberi</div>
+        <div class="rolle">Senior</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GESCHICHTE & KULTUR ============ -->
+<section id="geschichte" class="alt-bg">
+  <div class="wrap">
+    <div class="center" style="max-width:680px;margin:0 auto 10px">
+      <div class="eyebrow">Geschichte &amp; Kultur</div>
+      <h2>Aus Müllheim. Für das Markgräflerland.</h2>
+      <p>Über drei Jahrzehnte Handwerk in der Region — gewachsen mit unseren Kunden.</p>
+    </div>
+    <div class="grid2" style="margin-top:30px">
+      <div class="timeline">
+        <div class="tl-item"><span class="jahr">1987</span> — Gründung des Familienbetriebs in Müllheim.</div>
+        <div class="tl-item"><span class="jahr">Heute</span> — Eigene Ausstellung, persönliche Showroom-Beratung und ein durchgängig begleiteter, transparenter Ablauf.</div>
+      </div>
+      <div>
+        <h3>Was uns als Familie ausmacht</h3>
+        <p>Verlässlichkeit, Ehrlichkeit und die Liebe zum Detail — Werte, mit denen wir seit 1987 jedes Projekt angehen. Wir behandeln Ihr Zuhause so, als wäre es unser eigenes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEISTUNGEN / PRODUKTE ============ -->
+<section id="leistungen">
+  <div class="wrap">
+    <div class="center" style="max-width:760px;margin:0 auto 40px">
+      <div class="eyebrow">Leistungen &amp; Produkte</div>
+      <h2>Alles fürs Bad — aus einer Hand</h2>
+      <p style="color:var(--grau)">Schnell und schlüsselfertig, schön und zum Wohlfühlen, sicher und persönlich begleitet, transparent bis ins Detail — bei uns findet jeder genau das Bad, das zu ihm passt.</p>
+    </div>
+    <div class="cards">
+      <div class="card tone-d"><div class="ic">🛁</div><h3>Komplett-Badsanierung</h3><p>Schlüsselfertig von der Planung bis zur Übergabe — zum Festpreis und zum vereinbarten Termin. Sie entscheiden, wir liefern.</p></div>
+      <div class="card tone-s"><div class="ic">♿</div><h3>Barrierefreie Bäder</h3><p>Komfort und Geborgenheit für jedes Alter — damit Sie sich in Ihrem Zuhause dauerhaft sicher fühlen.</p></div>
+      <div class="card tone-s"><div class="ic">🔧</div><h3>Sanitär-Kundendienst</h3><p>Ein vertrautes Team, das da ist, wenn Sie es brauchen — schnelle Hilfe und Wartung aus einer Hand.</p></div>
+      <div class="card tone-c"><div class="ic">💶</div><h3>Förderberatung</h3><p>Wir rechnen für Sie nach und holen heraus, was an staatlichen Zuschüssen wirklich möglich ist — klar und nachvollziehbar.</p></div>
+      <div class="card tone-i"><div class="ic">💧</div><h3>Wellness &amp; Premium</h3><p>Ihr Bad als Ort der Ruhe — hochwertige Armaturen und Wellness-Momente zum Verlieben.</p></div>
+      <div class="card tone-c"><div class="ic">🧮</div><h3>BADrechner</h3><p>In wenigen Klicks zur ersten Kostenidee — Planungssicherheit von Anfang an.</p></div>
+      <div class="card tone-s"><div class="ic">🧂</div><h3>Enthärtung</h3><p>Weiches Wasser für Haut, Haar und Haushalt — schützt Leitungen und Armaturen und spart Energie.</p></div>
+      <div class="card tone-c"><div class="ic">🚰</div><h3>Wasserqualität</h3><p>Sauberes, gesundes Trinkwasser direkt aus der Leitung — mit Analyse und Filterung fürs Zuhause.</p></div>
+      <div class="card tone-i"><div class="ic">✨</div><h3>Pimp my Bad</h3><p>Das schnelle Bad-Upgrade ohne Komplettsanierung — frische Optik und mehr Komfort mit kleinem Eingriff.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROMO-BANNER ENTHÄRTUNG ============ -->
+<section style="padding:0 0 80px">
+  <div class="wrap">
+    <div class="promo" onclick="openEnt()">
+      <div class="txt">
+        <div class="small">Saubere Heizstäbe erwärmen Wasser schneller und effizienter.</div>
+        <div class="big">SOFORTIGE SENKUNG<br>DER ENERGIEKOSTEN!</div>
+      </div>
+      <div class="right">
+        <div class="badge">JETZT MEHR<br>ERFAHREN! ↗</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOWROOM ============ -->
+<section id="showroom" class="alt-bg">
+  <div class="wrap">
+    <div class="grid2">
+      <div class="imgbox foto" id="mapConsent" onclick="loadMap()" style="cursor:pointer;flex-direction:column;gap:10px">
+        <div style="font-size:2rem">📍</div>
+        <strong style="color:#fff">Karte von Google Maps laden</strong>
+        <span style="font-size:.82rem;color:#cfe0ee;max-width:280px;line-height:1.5">Mit Klick stimmen Sie zu, dass eine Verbindung zu Google hergestellt wird (siehe <a href="datenschutz.html" style="color:#fff;text-decoration:underline">Datenschutz</a>).</span>
+      </div>
+      <div>
+        <div class="eyebrow">Showroom Müllheim</div>
+        <h2>Ihr Bad — zum Anfassen</h2>
+        <p>Erleben Sie Materialien, Armaturen und ganze Bad-Welten live in unserer Ausstellung in der Haltinger Straße. Wir nehmen uns Zeit für Sie — in Ruhe, persönlich, unverbindlich.</p>
+        <a href="#kontakt" class="btn btn-blau">Showroom-Termin vereinbaren</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STIMMEN / BEWERTUNGEN ============ -->
+<section id="stimmen">
+  <div class="wrap">
+    <div class="center" style="max-width:680px;margin:0 auto 40px">
+      <div class="eyebrow">Was unsere Kunden sagen</div>
+      <h2>Vertrauen aus der Region</h2>
+    </div>
+    <div class="quotes">
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>„Sehr gute Beratung, Freundlichkeit, pünktliche Umsetzung wie geplant."</p>
+        <div class="who">— Kundin/Kunde aus der Region</div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>„Ausgezeichnete, zuverlässige und saubere Arbeit, dazu absolute Pünktlichkeit."</p>
+        <div class="who">— Kundin/Kunde aus der Region</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA-BAND ============ -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Erzählen Sie uns von Ihrem Traumbad</h2>
+    <p style="max-width:560px;margin:0 auto 26px">Unverbindlich, persönlich und zum verbindlichen Festpreis. Wir freuen uns auf Sie.</p>
+    <a href="#kontakt" class="btn">Jetzt Beratungsgespräch anfragen</a>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section id="kontakt">
+  <div class="wrap">
+    <div class="grid2">
+      <div>
+        <div class="eyebrow">Kontakt</div>
+        <h2>So erreichen Sie uns</h2>
+        <p>
+          <strong>Imberi GmbH</strong><br>
+          Haltinger Straße 22<br>
+          79379 Müllheim<br><br>
+          Telefon: <a href="tel:+497631805790">+49 7631 805790</a><br>
+          E-Mail: <a href="mailto:info@imberi-baeder.de">info@imberi-baeder.de</a>
+        </p>
+        <p>
+          <strong>Öffnungszeiten</strong><br>
+          Mo–Do 9–12 / 13–17 Uhr · Fr 9–12 / 13–15 Uhr<br>
+          Sa nach Vereinbarung
+        </p>
+      </div>
+      <div>
+        <h3>Beratungsgespräch anfragen</h3>
+        <p>Rufen Sie uns an oder schreiben Sie uns — wir melden uns kurzfristig bei Ihnen und vereinbaren Ihren persönlichen Termin im Showroom.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
+          <a href="tel:+497631805790" class="btn btn-blau">Jetzt anrufen</a>
+          <a href="mailto:info@imberi-baeder.de?subject=Beratungsgespr%C3%A4ch%20Bad" class="btn">E-Mail schreiben</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h4>Imberi Bäder</h4>
+        <p style="opacity:.8">Familienbetrieb für Badgestaltung &amp; Sanitär im Markgräflerland. Seit 1987 in Müllheim.</p>
+      </div>
+      <div>
+        <h4>Schnellzugriff</h4>
+        <a href="#familie">Familie</a><br>
+        <a href="#leistungen">Leistungen</a><br>
+        <a href="#showroom">Showroom</a><br>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div>
+        <h4>Qualität</h4>
+        <p style="opacity:.8">Partner im Verbund <strong>DIE BADGESTALTER</strong> — über 130 Fachbetriebe als Qualitätssiegel.</p>
+      </div>
+    </div>
+    <div class="feinprint">
+      © 2026 Imberi GmbH · Haltinger Straße 22, 79379 Müllheim &nbsp;|&nbsp;
+      <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ POP-UP: ENTHÄRTUNGS-BERATUNG ============ -->
+<div class="modal-overlay" id="entModal" onclick="if(event.target===this)closeEnt()">
+  <div class="modal">
+    <button class="modal-close" onclick="closeEnt()" aria-label="Schließen">&times;</button>
+    <div class="eyebrow">Enthärtungsanlagen</div>
+    <h2>Jetzt zu Enthärtungs&shy;anlagen beraten lassen</h2>
+    <p>Weiches Wasser schützt Leitungen, Armaturen und Geräte, spart Energie und schont Haut und Haar. Lassen Sie sich von uns unverbindlich beraten — wir melden uns kurzfristig bei Ihnen.</p>
+    <div class="kontakt-row">
+      <a href="tel:+497631805790" class="btn btn-blau">Jetzt anrufen</a>
+      <a href="mailto:info@imberi-baeder.de?subject=Beratung%20Enth%C3%A4rtungsanlage" class="btn">Beratung anfragen</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openEnt(){document.getElementById('entModal').classList.add('open');document.body.style.overflow='hidden';}
+  function closeEnt(){document.getElementById('entModal').classList.remove('open');document.body.style.overflow='';}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeEnt();});
+  function loadMap(){
+    var box=document.getElementById('mapConsent');
+    box.classList.remove('foto');
+    box.style.cursor='default';box.style.padding='0';box.style.gap='0';
+    box.innerHTML='<iframe class="mapbox" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Haltinger%20Stra%C3%9Fe%2022,%2079379%20M%C3%BCllheim&output=embed" title="Imberi Showroom Müllheim"></iframe>';
+  }
+</script>
+
+</body>
+</html>
