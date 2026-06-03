@@ -131,6 +131,14 @@
   .stelle{background:var(--weiss);border:1px solid var(--rand);border-radius:30px;padding:10px 20px;font-weight:600;color:var(--blau);font-size:.95rem;box-shadow:0 2px 10px rgba(10,61,98,.05)}
   .stelle span{color:var(--gold);margin-right:6px}
 
+  /* Kundendienst / Service-Band */
+  .service-band{background:var(--blau-tief);color:#fff;text-align:center}
+  .service-band h2{color:#fff;font-size:2.4rem;margin-bottom:.6rem}
+  .service-band .sub{font-size:1.15rem;max-width:640px;margin:0 auto;opacity:.95}
+  .service-points{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin:26px 0 32px}
+  .service-points .pt{display:flex;align-items:center;gap:10px;font-weight:600}
+  .service-points .pt .pi{color:var(--gold);font-size:1.25rem}
+
   .cta-band{position:relative;color:#fff;text-align:center;padding:96px 0;background:linear-gradient(rgba(7,42,68,.85),rgba(7,42,68,.92)),url('assets/Imberi_Bild_Bad.jpg') center/cover no-repeat}
   .cta-band h2{color:#fff;font-size:2.5rem;margin-bottom:.8rem}
   .cta-band .cta-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
@@ -184,6 +192,7 @@
       <a href="#familie">Familie</a>
       <a href="#geschichte">Geschichte</a>
       <a href="#leistungen">Leistungen</a>
+      <a href="#kundendienst">Service</a>
       <a href="#showroom">Showroom</a>
       <a href="#stimmen">Stimmen</a>
       <a href="#karriere">Karriere</a>
@@ -306,6 +315,21 @@
     <a class="promo-img" onclick="openEnt()" role="button" tabindex="0" aria-label="Zur Enthärtungs-Beratung">
       <img src="assets/banner-enthaertung.png" alt="Sofortige Senkung der Energiekosten — Enthärtungsanlage von Imberi">
     </a>
+  </div>
+</section>
+
+<!-- ============ KUNDENDIENST / SERVICE ============ -->
+<section id="kundendienst" class="service-band">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold)">Kundendienst &amp; Service</div>
+    <h2>Schnelle Hilfe, wenn's drauf ankommt</h2>
+    <p class="sub">Tropfender Hahn, defekte Armatur, Wartung oder ein dringender Serviceeinsatz? Wir kümmern uns schnell und unkompliziert — Reparatur, Entwässerung und Service aus einer Hand, von Menschen aus Ihrer Region.</p>
+    <div class="service-points">
+      <div class="pt"><span class="pi">✓</span>Schnelle Terminvergabe</div>
+      <div class="pt"><span class="pi">✓</span>Reparatur, Wartung &amp; Entwässerung</div>
+      <div class="pt"><span class="pi">✓</span>Alles aus einer Hand</div>
+    </div>
+    <a class="btn" onclick="openModal('serviceModal')" role="button" tabindex="0" style="cursor:pointer">Kundendienst anfragen</a>
   </div>
 </section>
 
@@ -498,6 +522,19 @@
     <h2 style="margin-bottom:.4rem">Wir freuen uns auf Ihre Nachricht</h2>
     <p style="margin-bottom:20px">Schreiben Sie uns einfach eine E-Mail — wir melden uns zeitnah zurück:</p>
     <a href="mailto:info@imberi-baeder.de" style="font-size:1.4rem;font-weight:800;color:var(--blau);display:inline-block;word-break:break-all">info@imberi-baeder.de</a>
+  </div>
+</div>
+
+<!-- ============ POP-UP: KUNDENDIENST (Formular) ============ -->
+<div class="modal-overlay" id="serviceModal" onclick="if(event.target===this)closeModal('serviceModal')">
+  <div class="modal modal-wide">
+    <button class="modal-close" onclick="closeModal('serviceModal')" aria-label="Schließen" style="z-index:3">&times;</button>
+    <div class="modal-body" style="padding:34px 36px 32px">
+      <div class="eyebrow" style="color:var(--gold)">Kundendienst &amp; Service</div>
+      <h2>Schnell &amp; unkompliziert anfragen</h2>
+      <p>Beschreiben Sie kurz Ihr Anliegen — wir melden uns umgehend und vereinbaren Ihren Serviceeinsatz.</p>
+      <iframe class="jotform" src="https://form.jotform.com/253352962368364" title="Kundendienst-Anfrage" loading="lazy" allow="geolocation; microphone; camera"></iframe>
+    </div>
   </div>
 </div>
 
