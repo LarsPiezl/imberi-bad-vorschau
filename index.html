@@ -171,6 +171,10 @@
   .modal-wide h2{font-size:1.55rem;margin:22px 0 .4rem}
   .jotform{width:100%;height:560px;border:0;border-radius:8px;margin-top:8px}
 
+  /* Schnellzugriff-Navigation (Kontakt) */
+  .quicknav{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:18px}
+  .quicknav .btn{display:block;text-align:center;padding:15px 18px}
+
   @media(max-width:860px){
     .grid2,.cards,.trust .grid,.fam,.quotes,footer .grid{grid-template-columns:1fr}
     .promo{flex-direction:column;text-align:center;padding:34px}
@@ -423,8 +427,7 @@
   <div class="wrap">
     <div class="grid2">
       <div>
-        <div class="eyebrow">Kontakt</div>
-        <h2>So erreichen Sie uns</h2>
+        <h2 style="font-size:2.9rem;margin-bottom:1.2rem">Kontakt</h2>
         <p>
           <strong>Imberi GmbH</strong><br>
           Haltinger Straße 22<br>
@@ -439,11 +442,15 @@
         </p>
       </div>
       <div>
-        <h3>Beratungsgespräch anfragen</h3>
-        <p>Rufen Sie uns an oder schreiben Sie uns — wir melden uns kurzfristig bei Ihnen und vereinbaren Ihren persönlichen Termin im Showroom.</p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
-          <a class="btn btn-blau" onclick="openModal('telModal')" role="button" tabindex="0" style="cursor:pointer">Jetzt anrufen</a>
-          <a class="btn" onclick="openModal('mailModal')" role="button" tabindex="0" style="cursor:pointer">E-Mail schreiben</a>
+        <h3>Schnellzugriff</h3>
+        <p style="color:var(--grau)">Alle Wege zu uns auf einen Blick — einfach das passende Anliegen wählen.</p>
+        <div class="quicknav">
+          <a class="btn btn-blau" onclick="openModal('telModal')" role="button" tabindex="0" style="cursor:pointer">📞 Anrufen</a>
+          <a class="btn btn-blau" onclick="openModal('mailModal')" role="button" tabindex="0" style="cursor:pointer">✉️ E-Mail</a>
+          <a class="btn" onclick="openModal('beratModal')" role="button" tabindex="0" style="cursor:pointer">🛁 Beratungsgespräch</a>
+          <a class="btn btn-blau" onclick="openModal('serviceModal')" role="button" tabindex="0" style="cursor:pointer">🔧 Kundendienst</a>
+          <a class="btn btn-blau" onclick="openModal('entModal')" role="button" tabindex="0" style="cursor:pointer">💧 Enthärtungsanlage</a>
+          <a class="btn btn-blau" onclick="openModal('bewerbModal')" role="button" tabindex="0" style="cursor:pointer">🙋 Bewerbung</a>
         </div>
       </div>
     </div>
