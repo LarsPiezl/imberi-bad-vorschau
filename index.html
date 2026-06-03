@@ -126,6 +126,11 @@
   .stars{color:var(--gold);font-size:1.1rem;margin-bottom:10px}
   .quote .who{font-weight:700;color:var(--blau);margin-top:10px;font-size:.9rem}
 
+  /* Karriere */
+  .stellen{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:6px 0 26px}
+  .stelle{background:var(--weiss);border:1px solid var(--rand);border-radius:30px;padding:10px 20px;font-weight:600;color:var(--blau);font-size:.95rem;box-shadow:0 2px 10px rgba(10,61,98,.05)}
+  .stelle span{color:var(--gold);margin-right:6px}
+
   .cta-band{position:relative;color:#fff;text-align:center;padding:96px 0;background:linear-gradient(rgba(7,42,68,.85),rgba(7,42,68,.92)),url('assets/Imberi_Bild_Bad.jpg') center/cover no-repeat}
   .cta-band h2{color:#fff;font-size:2.5rem;margin-bottom:.8rem}
   .cta-band .cta-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
@@ -181,6 +186,7 @@
       <a href="#leistungen">Leistungen</a>
       <a href="#showroom">Showroom</a>
       <a href="#stimmen">Stimmen</a>
+      <a href="#karriere">Karriere</a>
       <a href="#kontakt" class="btn btn-blau" style="padding:9px 18px">Termin anfragen</a>
     </nav>
   </div>
@@ -357,6 +363,37 @@
   </div>
 </section>
 
+<!-- ============ KARRIERE ============ -->
+<section id="karriere" class="alt-bg">
+  <div class="wrap">
+    <div class="center" style="max-width:720px;margin:0 auto 40px">
+      <div class="eyebrow">Karriere bei Imberi</div>
+      <h2>Plane mit uns deine Karriere</h2>
+      <p style="font-size:1.15rem">Erzähl uns von deinen Plänen — und wir bauen deine Zukunft im Handwerk gemeinsam. Bei uns wirst du Teil einer Familie, die seit 1987 für Qualität steht: ein Team, das zusammenhält, moderne digitale Arbeitsweisen und kurze Wege direkt in der Region.</p>
+    </div>
+
+    <div class="cards" style="margin-bottom:46px">
+      <div class="card tone-s"><div class="ic">🤝</div><h3>Familiäres Team</h3><p>Kein anonymer Konzern, sondern echtes Miteinander. Bei uns kennt man sich beim Namen — und packt gemeinsam an.</p></div>
+      <div class="card tone-c"><div class="ic">📱</div><h3>Modern &amp; digital</h3><p>Wir arbeiten mit zeitgemäßen Tools statt Papierchaos. Du lernst, wie Handwerk heute organisiert läuft.</p></div>
+      <div class="card tone-d"><div class="ic">📍</div><h3>Sicher in der Region</h3><p>Fester Arbeitsplatz im Markgräflerland, keine langen Anfahrten. Dein Zuhause bleibt dein Mittelpunkt.</p></div>
+    </div>
+
+    <div class="center">
+      <h3 style="margin-bottom:6px">Aktuell suchen wir</h3>
+      <div class="stellen">
+        <div class="stelle"><span>›</span>Anlagenmechaniker/in SHK</div>
+        <div class="stelle"><span>›</span>Fliesenleger/in</div>
+        <div class="stelle"><span>›</span>Badverkäufer/in</div>
+        <div class="stelle"><span>›</span>Meister/in SHK</div>
+        <div class="stelle"><span>›</span>Mitarbeiter/in Backoffice</div>
+        <div class="stelle"><span>›</span>Ausbildung / Azubi</div>
+      </div>
+      <p style="color:var(--grau);max-width:560px;margin:0 auto 24px">Nichts Passendes dabei? Wir freuen uns auch über deine Initiativbewerbung — gute Leute finden bei uns immer einen Platz.</p>
+      <a class="btn" onclick="openModal('bewerbModal')" role="button" tabindex="0" style="cursor:pointer">Jetzt bewerben</a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ KONTAKT ============ -->
 <section id="kontakt">
   <div class="wrap">
@@ -461,6 +498,19 @@
     <h2 style="margin-bottom:.4rem">Wir freuen uns auf Ihre Nachricht</h2>
     <p style="margin-bottom:20px">Schreiben Sie uns einfach eine E-Mail — wir melden uns zeitnah zurück:</p>
     <a href="mailto:info@imberi-baeder.de" style="font-size:1.4rem;font-weight:800;color:var(--blau);display:inline-block;word-break:break-all">info@imberi-baeder.de</a>
+  </div>
+</div>
+
+<!-- ============ POP-UP: BEWERBUNG (Formular) ============ -->
+<div class="modal-overlay" id="bewerbModal" onclick="if(event.target===this)closeModal('bewerbModal')">
+  <div class="modal modal-wide">
+    <button class="modal-close" onclick="closeModal('bewerbModal')" aria-label="Schließen" style="z-index:3">&times;</button>
+    <div class="modal-body" style="padding:34px 36px 32px">
+      <div class="eyebrow" style="color:var(--gold)">Bewirb dich</div>
+      <h2>Plane mit uns deine Karriere</h2>
+      <p>Erzähl uns von deinen Plänen — wir freuen uns auf dich! Fülle einfach das Formular aus, wir melden uns zeitnah bei dir.</p>
+      <iframe class="jotform" src="https://form.jotform.com/260394285295365" title="Bewerbung bei Imberi" loading="lazy" allow="geolocation; microphone; camera"></iframe>
+    </div>
   </div>
 </div>
 
