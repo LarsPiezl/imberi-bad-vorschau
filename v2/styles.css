@@ -1,0 +1,112 @@
+/* Imberi DIE BADGESTALTER — v2 (Mehrseiter-Gerüst) — gemeinsames Stylesheet */
+:root{
+  --blau:#0a3d62; --blau-tief:#072a44; --gold:#c9a86a; --gold-tief:#b08d4f;
+  --hell:#f5f7f9; --grau:#5b6b78; --rand:#e3e8ec; --text:#1c2b36;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',-apple-system,Helvetica,Arial,sans-serif;color:var(--text);line-height:1.65;background:#fff}
+img{max-width:100%;display:block}
+a{color:var(--blau)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* ---- Header / Nav ---- */
+header.site{position:sticky;top:0;z-index:100;background:var(--blau-tief);color:#fff;box-shadow:0 2px 14px rgba(0,0,0,.18)}
+header.site .wrap{display:flex;align-items:center;gap:18px;min-height:68px}
+header.site .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em;color:#fff;text-decoration:none}
+header.site .brand img{height:38px}
+header.site .brand span{color:var(--gold)}
+header.site nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+header.site nav a{color:#cfe0ee;text-decoration:none;font-weight:600;font-size:.95rem;padding:8px 12px;border-radius:8px}
+header.site nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+header.site nav a.active{color:var(--gold)}
+.nav-cta{background:var(--gold)!important;color:#3a2e10!important}
+.nav-cta:hover{background:#d8b97a!important}
+
+/* ---- Hero ---- */
+.hero{position:relative;color:#fff;background:var(--blau)}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.55)}
+.hero .wrap{position:relative;padding:90px 24px 80px}
+.hero h1{font-size:2.7rem;line-height:1.15;max-width:760px}
+.hero p.lead{font-size:1.2rem;margin-top:16px;max-width:620px;color:#e9eef3}
+.kicker{color:var(--gold);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;margin-bottom:10px}
+
+/* ---- Buttons ---- */
+.btn{display:inline-block;background:var(--gold);color:#3a2e10;font-weight:700;padding:14px 26px;border-radius:10px;text-decoration:none;border:none;cursor:pointer;font-size:1rem;transition:.18s}
+.btn:hover{background:#d8b97a;transform:translateY(-2px)}
+.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
+.btn-outline:hover{background:rgba(255,255,255,.12)}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+
+/* ---- Sections ---- */
+section.block{padding:64px 0}
+section.block.alt{background:var(--hell)}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 40px}
+.sec-head h2{color:var(--blau);font-size:2rem}
+.sec-head p{color:var(--grau);margin-top:10px}
+h2.left{color:var(--blau);font-size:1.9rem;margin-bottom:8px}
+
+/* ---- Cards ---- */
+.grid{display:grid;gap:22px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.card{background:#fff;border:1px solid var(--rand);border-radius:14px;padding:26px;box-shadow:0 6px 22px rgba(7,42,68,.05)}
+.card .ic{width:46px;height:46px;background:var(--blau);color:var(--gold);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:14px}
+.card h3{color:var(--blau);font-size:1.2rem;margin-bottom:8px}
+.card p{color:var(--grau);font-size:.97rem}
+
+/* ---- Stärken-Rad ---- */
+.staerken-wheel{max-width:560px;margin:0 auto 10px}
+.strength{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--rand);border-radius:12px;background:#fff}
+.strength .num{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--blau);color:var(--gold);font-weight:700;display:flex;align-items:center;justify-content:center}
+.strength h3{color:var(--blau);font-size:1.05rem;margin-bottom:3px}
+.strength p{color:var(--grau);font-size:.93rem}
+
+/* ---- Platzhalter ---- */
+.placeholder{background:repeating-linear-gradient(45deg,#eef2f5,#eef2f5 14px,#e4eaee 14px,#e4eaee 28px);border:2px dashed #c2cdd5;border-radius:12px;min-height:200px;display:flex;align-items:center;justify-content:center;text-align:center;color:#7d8b95;font-weight:600;padding:20px}
+.ph-note{font-size:.85rem;color:var(--gold-tief);font-weight:700;margin-top:6px}
+
+/* ---- Vorher/Nachher ---- */
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ba .tag{font-weight:700;color:var(--blau);margin-bottom:6px;text-align:center}
+
+/* ---- CTA-Band ---- */
+.cta-band{background:var(--blau-tief);color:#fff;text-align:center;padding:60px 24px}
+.cta-band h2{font-size:1.9rem}
+.cta-band p{color:#cfe0ee;margin-top:10px;max-width:560px;margin-left:auto;margin-right:auto}
+
+/* ---- Formular ---- */
+.jotform{width:100%;min-height:620px;border:0;border-radius:12px;background:#fff}
+
+/* ---- Familie ---- */
+.fam{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.person{text-align:center}
+.person .avatar{width:100%;aspect-ratio:1/1;border-radius:14px;object-fit:cover;background:var(--hell)}
+.person h3{color:var(--blau);margin-top:12px;font-size:1.1rem}
+.person .role{color:var(--gold-tief);font-weight:700;font-size:.9rem}
+
+/* ---- Footer ---- */
+footer.site{background:var(--blau-tief);color:#c5d3de;padding:48px 0 26px;font-size:.92rem}
+footer.site .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px;margin-bottom:28px}
+footer.site h4{color:#fff;margin-bottom:12px;font-size:1rem}
+footer.site a{color:#c5d3de;text-decoration:none;display:block;padding:3px 0}
+footer.site a:hover{color:var(--gold)}
+footer.site .brand-line{display:flex;align-items:center;gap:10px;font-weight:800;color:#fff;margin-bottom:10px}
+footer.site .brand-line img{height:34px}
+footer.site .legal{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between;color:#9fb1bf}
+footer.site .legal a{display:inline}
+
+/* ---- Responsive ---- */
+@media(max-width:920px){
+  .grid-3{grid-template-columns:1fr 1fr}
+  .fam{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  .hero h1{font-size:2rem}
+  .hero .wrap{padding:60px 22px 54px}
+  .grid-3,.grid-2,.fam,.ba,footer.site .cols{grid-template-columns:1fr}
+  header.site .wrap{flex-wrap:wrap;min-height:auto;padding-top:10px;padding-bottom:10px}
+  header.site nav{margin-left:0;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+  header.site nav a{white-space:nowrap}
+  .sec-head h2,h2.left,.cta-band h2{font-size:1.55rem}
+}

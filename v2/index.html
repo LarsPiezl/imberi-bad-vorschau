@@ -3,453 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
-<title>Imberi Bäder — Ihr Traumbad aus Müllheim | Version 2</title>
-<meta name="description" content="Imberi Die Badgestalter — Komplettbäder, Barrierefreiheit, Wellness und Wasserqualität aus einer Hand. Familienbetrieb seit 1987 in Müllheim. Festpreis, Fixtermin, ein Ansprechpartner.">
+<meta name="robots" content="index, follow">
+<title>Imberi DIE BADGESTALTER – Komplettbäder & Badsanierung in Müllheim</title>
+<meta name="description" content="Ihr neues Bad aus einer Hand – Familienbetrieb in Müllheim seit 1987. Festpreis, Fixtermin, ein persönlicher Ansprechpartner. Showroom im Markgräflerland.">
 <link rel="icon" type="image/png" href="assets/Logo_imberi.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Imberi Bäder — Ihr Traumbad aus Müllheim">
-<meta property="og:description" content="Komplettbäder, Barrierefreiheit, Wellness. Familienbetrieb seit 1987. Showroom in Müllheim.">
-<meta property="og:image" content="assets/hero.jpg">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Imberi GmbH — Die Badgestalter","image":"assets/hero.jpg","description":"Familienbetrieb für Badgestaltung, Badsanierung, barrierefreie Bäder und Sanitär im Markgräflerland. Seit 1987 in Müllheim.","address":{"@type":"PostalAddress","streetAddress":"Haltinger Straße 22","postalCode":"79379","addressLocality":"Müllheim","addressRegion":"Baden-Württemberg","addressCountry":"DE"},"telephone":"+49 7631 805790","email":"info@imberi-baeder.de","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"09:00","closes":"15:00"}],"founder":"Familie Imberi","foundingDate":"1987"}
-</script>
-<style>
-  :root{
-    --blau:#0a3d62; --blau-tief:#072a44; --gold:#c9a86a; --gold-tief:#b8965a;
-    --hell:#f5f7f9; --grau:#5b6b78; --weiss:#ffffff; --rand:#e3e8ec;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Segoe UI',-apple-system,Helvetica,Arial,sans-serif;color:#1c2b36;line-height:1.65;background:var(--weiss)}
-  h1,h2,h3{font-weight:700;line-height:1.15;color:var(--blau)}
-  h2{font-size:2.2rem;margin-bottom:.7rem}
-  h3{font-size:1.3rem}
-  p{margin-bottom:1rem}
-  a{color:var(--blau);text-decoration:none}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
-  section{padding:88px 0}
-  .center{text-align:center}
-  .eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:.78rem;font-weight:700;color:var(--gold);margin-bottom:.6rem}
-  .btn{display:inline-block;background:var(--gold);color:#fff!important;padding:14px 28px;border-radius:6px;font-weight:700;font-size:.95rem;transition:.2s;border:none;cursor:pointer}
-  .btn:hover{background:var(--gold-tief)}
-  .btn-outline{background:transparent;border:2px solid #fff;color:#fff!important}
-  .btn-blau{background:var(--blau)} .btn-blau:hover{background:var(--blau-tief)}
-
-  /* Nav */
-  header.nav{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--rand)}
-  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
-  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.3rem;color:var(--blau)}
-  .logo img{height:44px}
-  .nav nav a{margin-left:24px;font-weight:600;color:#33454f;font-size:.95rem}
-  .nav nav a:hover{color:var(--gold)}
-
-  /* Hero */
-  .hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;text-align:center;
-    background:linear-gradient(rgba(7,42,68,.55),rgba(7,42,68,.66)),url('assets/hero.jpg') center/cover no-repeat}
-  .hero .wrap{max-width:860px}
-  .hero h1{color:#fff;font-size:4rem;margin-bottom:1.2rem}
-  .hero .sub{font-size:1.5rem;margin:0 auto 2.4rem;max-width:680px;opacity:.97}
-  .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
-
-  /* Trust */
-  .trust{background:var(--blau);color:#fff;padding:36px 0}
-  .trust .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
-  .trust .num{font-size:2.1rem;font-weight:800;color:#fff}
-  .trust .lbl{font-size:.9rem;opacity:.85}
-
-  /* Feature-Sektionen (alternierend Bild/Text) */
-  .feature{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;min-height:460px}
-  .feature .bild{background-size:cover;background-position:center;min-height:340px}
-  .feature .inhalt{padding:64px 56px;display:flex;flex-direction:column;justify-content:center}
-  .feature.alt .bild{order:2}
-  .feature .num-tag{font-size:.85rem;font-weight:700;color:var(--gold);letter-spacing:.05em;margin-bottom:.4rem}
-  .feature.dunkel{background:var(--blau-tief);color:#fff}
-  .feature.dunkel h2{color:#fff} .feature.dunkel p{color:rgba(255,255,255,.9)}
-  .feature.hell{background:var(--hell)}
-
-  /* Intro */
-  .intro{text-align:center;max-width:760px;margin:0 auto}
-
-  /* Showroom-Band */
-  .band{position:relative;color:#fff;text-align:center;padding:120px 0;
-    background:linear-gradient(rgba(7,42,68,.72),rgba(7,42,68,.82)),url('assets/showroom.jpg') center/cover no-repeat}
-  .band h2{color:#fff;font-size:2.6rem}
-  .band p{max-width:600px;margin:0 auto 26px;font-size:1.15rem}
-  .mapbox{border:0;width:100%;height:320px;border-radius:12px;margin-top:30px}
-
-  /* Beratung split */
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-  .split img{width:100%;border-radius:14px;display:block;box-shadow:0 14px 40px rgba(7,42,68,.16)}
-
-  /* Promo */
-  .promo-img{display:block;cursor:pointer;border-radius:16px;overflow:hidden;box-shadow:0 14px 44px rgba(7,42,68,.28);transition:.2s;line-height:0}
-  .promo-img:hover{transform:translateY(-3px)} .promo-img img{width:100%;height:auto;display:block}
-
-  /* Karriere */
-  #karriere{background:linear-gradient(180deg,#fbf7ef,#f5ead6)}
-  .kcards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:44px}
-  .kcard{position:relative;overflow:hidden;border-radius:16px;min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;color:#fff;background-size:cover;background-position:center;box-shadow:0 12px 34px rgba(7,42,68,.16)}
-  .kcard::before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(7,42,68,.15),rgba(7,42,68,.82))}
-  .kcard>*{position:relative;z-index:1} .kcard h3{color:#fff;margin-bottom:.3rem} .kcard p{color:rgba(255,255,255,.94);margin:0;font-size:.95rem}
-  .kcard .kic{width:54px;height:54px;border-radius:13px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:14px}
-  .stellen{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:780px;margin:14px auto 26px}
-  .stelle{background:#fff;border:1px solid var(--rand);border-radius:30px;padding:12px 18px;font-weight:600;color:var(--blau);font-size:.92rem;text-align:center}
-  .stelle span{color:var(--gold);margin-right:6px}
-
-  /* Stimmen */
-  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .quote{background:var(--weiss);border:1px solid var(--rand);border-radius:12px;padding:28px}
-  .stars{color:var(--gold);margin-bottom:10px}
-  .quote .who{font-weight:700;color:var(--blau);margin-top:10px;font-size:.88rem}
-
-  /* Kontakt */
-  .kontakt-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-  .quicknav{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:18px}
-  .quicknav .btn{display:block;text-align:center;padding:15px 18px}
-
-  /* CTA */
-  .cta-band{background:var(--blau-tief);color:#fff;text-align:center}
-  .cta-band h2{color:#fff;font-size:2.4rem}
-
-  footer{background:#061d2f;color:#c5d3de;padding:48px 0 28px;font-size:.92rem}
-  footer .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-bottom:28px}
-  footer h4{color:#fff;margin-bottom:12px} footer a{color:#c5d3de} footer a:hover{color:#fff}
-  .feinprint{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:.82rem;opacity:.7}
-
-  /* Modals */
-  .modal-overlay{position:fixed;inset:0;background:rgba(7,42,68,.62);backdrop-filter:blur(3px);z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
-  .modal-overlay.open{display:flex}
-  .modal{background:#fff;border-radius:16px;max-width:560px;width:100%;padding:44px;position:relative;box-shadow:0 24px 70px rgba(0,0,0,.35);animation:pop .22s ease}
-  .modal-wide{max-width:680px;padding:0;overflow:hidden}
-  .modal-wide .modal-body{padding:34px 36px 32px}
-  .modal-banner{width:100%;display:block}
-  .jotform{width:100%;height:560px;border:0;border-radius:8px;margin-top:8px}
-  @keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
-  .modal-close{position:absolute;top:12px;right:18px;border:none;background:none;font-size:2rem;color:var(--grau);cursor:pointer;line-height:1;z-index:3}
-  .modal-close:hover{color:var(--blau)}
-
-  @media(max-width:860px){
-    .trust .grid,.kcards,.stellen,.quotes,.kontakt-grid,.split,footer .grid{grid-template-columns:1fr}
-    .feature{grid-template-columns:1fr} .feature.alt .bild{order:0} .feature .inhalt{padding:40px 28px}
-    .hero h1{font-size:2.5rem} .nav nav{display:none}
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- NAV -->
-<header class="nav">
+<header class="site">
   <div class="wrap">
-    <a class="logo" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="Zum Seitenanfang">
-      <img src="assets/Logo_imberi.png" alt="Imberi" onerror="this.style.display='none'">
-      <span style="text-transform:lowercase">imberi-bad<span style="color:var(--gold)">.de</span></span>
-    </a>
+    <a class="brand" href="index.html"><img src="assets/Logo_imberi.png" alt="Imberi"> IMBERI<span>.</span></a>
     <nav>
-      <a href="#leistungen">Leistungen</a>
-      <a href="#beratung">Beratung</a>
-      <a href="#kundendienst">Service</a>
-      <a href="#showroom">Showroom</a>
-      <a href="#karriere">Karriere</a>
-      <a href="#kontakt" class="btn btn-blau" style="padding:9px 18px">Termin anfragen</a>
+      <a href="index.html" class="active">Start</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="staerken.html">Unsere Stärken</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="kontakt.html" class="nav-cta">Beratung</a>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
+  <div class="bg" style="background-image:url('assets/Imberi_Bild_Bad.jpg')"></div>
   <div class="wrap">
-    <div class="eyebrow" style="color:var(--gold)">Die Badgestalter · Müllheim seit 1987</div>
-    <h1>Ihr Traumbad.<br>Aus einer Hand.</h1>
-    <p class="sub">Geplant, gebaut und übergeben von einer Familie, die seit über 30 Jahren weiß, wie sich ein perfektes Bad anfühlt.</p>
-    <div class="cta-row">
-      <a class="btn" onclick="openModal('beratModal')" role="button" tabindex="0" style="cursor:pointer">Beratungsgespräch anfragen</a>
-      <a href="#showroom" class="btn btn-outline">Showroom erleben</a>
+    <div class="kicker">Familienbetrieb in Müllheim seit 1987</div>
+    <h1>Ihr neues Traumbad – geplant, gebaut und übergeben von einer Familie.</h1>
+    <p class="lead">Komplettbäder aus einer Hand: ein persönlicher Ansprechpartner, Festpreis, Fixtermin. Im Markgräflerland zu Hause.</p>
+    <div class="btn-row">
+      <a class="btn" href="kontakt.html">Beratung anfragen</a>
+      <a class="btn btn-outline" href="staerken.html">Wofür wir stehen</a>
     </div>
   </div>
 </section>
 
-<!-- TRUST -->
-<section class="trust" style="padding:36px 0">
-  <div class="wrap"><div class="grid">
-    <div><div class="num">1987</div><div class="lbl">gegründet · Familienbetrieb</div></div>
-    <div><div class="num">30+</div><div class="lbl">Jahre Erfahrung</div></div>
-    <div><div class="num">Festpreis</div><div class="lbl">& verbindlicher Fixtermin</div></div>
-    <div><div class="num">1</div><div class="lbl">persönlicher Ansprechpartner</div></div>
-  </div></div>
-</section>
-
-<!-- INTRO -->
-<section id="leistungen" style="padding-bottom:40px">
-  <div class="wrap"><div class="intro">
-    <div class="eyebrow">Leistungen</div>
-    <h2>Alles fürs Bad — schön, sicher, schlüsselfertig</h2>
-    <p style="color:var(--grau)">Vier Welten, ein Versprechen: Sie erzählen uns Ihren Wunsch, wir machen ihn wahr — transparent, termintreu und zum Festpreis.</p>
-  </div></div>
-</section>
-
-<!-- FEATURE 1: Komplettbad -->
-<div class="feature">
-  <div class="bild" style="background-image:url('assets/komplettbad.jpg')"></div>
-  <div class="inhalt">
-    <div class="num-tag">01 — Komplett-Badsanierung</div>
-    <h2>Ihr neues Bad, schlüsselfertig</h2>
-    <p>Von der ersten Planung bis zur fertigen Übergabe — alles aus einer Hand, zum Festpreis und zum vereinbarten Termin. Ein Ansprechpartner koordiniert alle Gewerke, Sie genießen das Ergebnis.</p>
-    <div><a class="btn" onclick="openModal('beratModal')" role="button" tabindex="0" style="cursor:pointer">Projekt besprechen</a></div>
-  </div>
-</div>
-
-<!-- FEATURE 2: Barrierefrei -->
-<div class="feature alt hell">
-  <div class="bild" style="background-image:url('assets/barrierefrei.jpg')"></div>
-  <div class="inhalt">
-    <div class="num-tag">02 — Barrierefreie Bäder</div>
-    <h2>Komfort, der bleibt</h2>
-    <p>Bodengleiche Duschen, durchdachte Haltegriffe, sichere Wege — elegant gestaltet statt klinisch. Damit Sie sich in Ihrem Zuhause für viele Jahre wohl und sicher fühlen. Förderberatung inklusive.</p>
-    <div><a class="btn" onclick="openModal('beratModal')" role="button" tabindex="0" style="cursor:pointer">Beraten lassen</a></div>
-  </div>
-</div>
-
-<!-- FEATURE 3: Wellness -->
-<div class="feature">
-  <div class="bild" style="background-image:url('assets/wellness.jpg')"></div>
-  <div class="inhalt">
-    <div class="num-tag">03 — Wellness & Premium</div>
-    <h2>Ihr privater Rückzugsort</h2>
-    <p>Freistehende Wannen, sinnliche Materialien, Licht zum Wohlfühlen: Wir verwandeln Ihr Bad in einen Ort der Ruhe — hochwertig bis ins kleinste Detail.</p>
-    <div><a class="btn" onclick="openModal('beratModal')" role="button" tabindex="0" style="cursor:pointer">Traumbad planen</a></div>
-  </div>
-</div>
-
-<!-- FEATURE 4: Wasser/Enthärtung (dunkel) -->
-<div class="feature alt dunkel">
-  <div class="bild" style="background-image:url('assets/wasser.jpg')"></div>
-  <div class="inhalt">
-    <div class="num-tag">04 — Wasserqualität & Enthärtung</div>
-    <h2>Weiches, reines Wasser</h2>
-    <p>Schluss mit Kalkflecken: Eine Enthärtungsanlage schützt Leitungen, Armaturen und Geräte, spart Energie und schont Haut und Haar. Niederschwellig, schnell installiert — Ihr Quick Win fürs ganze Haus.</p>
-    <div><a class="btn" onclick="openEnt()" role="button" tabindex="0" style="cursor:pointer">Enthärtung entdecken</a></div>
-  </div>
-</div>
-
-<!-- ENTHÄRTUNGS-PROMO -->
-<section style="padding:64px 0 0">
+<!-- Leistungen-Teaser -->
+<section class="block">
   <div class="wrap">
-    <a class="promo-img" onclick="openEnt()" role="button" tabindex="0" aria-label="Zur Enthärtungs-Beratung">
-      <img src="assets/banner-enthaertung.png" alt="Sofortige Senkung der Energiekosten — Enthärtungsanlage">
-    </a>
-  </div>
-</section>
-
-<!-- BERATUNG / FAMILIE -->
-<section id="beratung">
-  <div class="wrap"><div class="split">
-    <img src="assets/beratung.jpg" alt="Persönliche Beratung im Showroom">
-    <div>
-      <div class="eyebrow">Die Menschen hinter Imberi</div>
-      <h2>Sie sprechen mit der Familie — nicht mit einer Hotline</h2>
-      <p>Was 1987 begann, führen wir bis heute persönlich weiter. Bei uns nimmt sich ein fester Ansprechpartner Zeit für Ihr Projekt — vom ersten Gespräch im Showroom bis zur Schlüsselübergabe.</p>
-      <p style="color:var(--grau)">Ehrlich, verlässlich und im Markgräflerland verwurzelt. Premium-Handwerk mit Handschlag-Qualität.</p>
-      <div><a class="btn btn-blau" onclick="openModal('beratModal')" role="button" tabindex="0" style="cursor:pointer">Persönliches Gespräch vereinbaren</a></div>
+    <div class="sec-head">
+      <h2>Alles fürs Bad – aus einer Hand</h2>
+      <p>Von der ersten Idee bis zur schlüsselfertigen Übergabe. Ein Team, ein Ansprechpartner, ein Festpreis.</p>
     </div>
-  </div></div>
-</section>
-
-<!-- KUNDENDIENST / SERVICE -->
-<section id="kundendienst" style="background:var(--hell)">
-  <div class="wrap center" style="max-width:720px;margin:0 auto">
-    <div class="eyebrow">Kundendienst & Service</div>
-    <h2>Schnelle Hilfe, wenn's drauf ankommt</h2>
-    <p style="color:var(--grau);font-size:1.1rem">Tropfender Hahn, defekte Armatur, Wartung oder ein dringender Serviceeinsatz? Wir kümmern uns schnell und unkompliziert — Reparatur, Entwässerung und Service aus einer Hand.</p>
-    <div style="margin-top:18px"><a class="btn btn-blau" onclick="openModal('serviceModal')" role="button" tabindex="0" style="cursor:pointer">Kundendienst anfragen</a></div>
+    <div class="grid grid-3">
+      <div class="card"><div class="ic">🛁</div><h3>Komplettbad-Sanierung</h3><p>Ihr neues Bad komplett aus einer Hand – Planung, Handwerk und Übergabe koordiniert wir für Sie.</p></div>
+      <div class="card"><div class="ic">♿</div><h3>Barrierefreie Bäder</h3><p>Komfortabel und sicher für jedes Alter – bodengleiche Duschen, durchdachte Lösungen, Förderberatung.</p></div>
+      <div class="card"><div class="ic">💧</div><h3>Wasserenthärtung</h3><p>Schluss mit Kalk: weiches Wasser schützt Armaturen und Geräte und senkt Energiekosten.</p></div>
+    </div>
+    <div class="btn-row" style="justify-content:center"><a class="btn" href="leistungen.html">Alle Leistungen ansehen</a></div>
   </div>
 </section>
 
-<!-- SHOWROOM-BAND -->
-<section id="showroom" class="band">
+<!-- Stärken-Teaser -->
+<section class="block alt">
   <div class="wrap">
-    <div class="eyebrow" style="color:var(--gold)">Showroom Müllheim</div>
-    <h2>Ihr Bad — zum Anfassen</h2>
-    <p>Erleben Sie Materialien, Armaturen und ganze Bad-Welten live in unserer Ausstellung in der Haltinger Straße. Wir nehmen uns Zeit — in Ruhe, persönlich, unverbindlich.</p>
-    <a href="#kontakt" class="btn">Showroom-Termin vereinbaren</a>
-    <div class="wrap" style="max-width:820px;padding:0">
-      <div class="mapbox foto" id="mapConsent" onclick="loadMap()" style="cursor:pointer;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#fff">
-        <div style="font-size:1.8rem">📍</div>
-        <strong>Karte von Google Maps laden</strong>
-        <span style="font-size:.82rem;opacity:.85">Mit Klick stimmen Sie der Verbindung zu Google zu (siehe <a href="datenschutz.html" style="color:#fff;text-decoration:underline">Datenschutz</a>).</span>
+    <div class="grid grid-2" style="align-items:center">
+      <div>
+        <div class="kicker" style="color:var(--gold-tief)">Wofür wir stehen</div>
+        <h2 class="left">Unsere Stärken</h2>
+        <p style="color:var(--grau);margin-bottom:18px">Acht Versprechen, die jedes Imberi-Projekt tragen – von der persönlichen Beratung bis zur professionellen Umsetzung. „Ihr Bad, unsere Leidenschaft."</p>
+        <a class="btn" href="staerken.html">Unsere Stärken entdecken</a>
+      </div>
+      <div><img class="staerken-wheel" src="assets/staerken-wheel.png" alt="Wofür wir stehen – die Stärken von Imberi DIE BADGESTALTER"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Familie-Teaser -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Eine Familie. Ein Versprechen.</h2>
+      <p>Seit 1987 stehen wir mit unserem Namen für Ihr Bad. Persönlich, regional, verlässlich.</p>
+    </div>
+    <div class="btn-row" style="justify-content:center"><a class="btn btn-outline" style="color:var(--blau);border-color:var(--blau)" href="ueber-uns.html">Lernen Sie die Familie Imberi kennen</a></div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <h2>Bereit für Ihr neues Bad?</h2>
+    <p>Vereinbaren Sie ein unverbindliches Beratungsgespräch – wir freuen uns auf Sie.</p>
+    <div class="btn-row" style="justify-content:center"><a class="btn" href="kontakt.html">Jetzt Beratung anfragen</a></div>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand-line"><img src="assets/Logo_imberi.png" alt="Imberi"> Imberi <span style="color:var(--gold)">DIE BADGESTALTER</span></div>
+        <p>Ihr Familienbetrieb für Badgestaltung in Müllheim – seit 1987.</p>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <a href="leistungen.html">Komplettbad</a>
+        <a href="leistungen.html">Barrierefrei</a>
+        <a href="leistungen.html">Wasserenthärtung</a>
+        <a href="karriere.html">Karriere</a>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <a href="tel:+497631805790">07631 805790</a>
+        <a href="mailto:info@imberi-baeder.de">info@imberi-baeder.de</a>
+        <a href="https://maps.google.com/?q=Haltinger+Stra%C3%9Fe+22,+79379+M%C3%BCllheim" target="_blank" rel="noopener">Haltinger Straße 22, 79379 Müllheim</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- STIMMEN -->
-<section>
-  <div class="wrap">
-    <div class="center" style="max-width:680px;margin:0 auto 40px">
-      <div class="eyebrow">Was unsere Kunden sagen</div>
-      <h2>Vertrauen aus der Region</h2>
+    <div class="legal">
+      <span>© 2026 Imberi GmbH</span>
+      <span><a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="datenschutz.html">Datenschutz</a></span>
     </div>
-    <div class="quotes">
-      <div class="quote"><div class="stars">★★★★★</div><p>„Sehr gute Beratung, Freundlichkeit, pünktliche Umsetzung wie geplant."</p><div class="who">— Kundin aus der Region</div></div>
-      <div class="quote"><div class="stars">★★★★★</div><p>„Ausgezeichnete, zuverlässige und saubere Arbeit, dazu absolute Pünktlichkeit."</p><div class="who">— Kunde aus der Region</div></div>
-      <div class="quote"><div class="stars">★★★★★</div><p>„Vom ersten Termin bis zur Übergabe alles aus einer Hand — wir fühlen uns rundum wohl."</p><div class="who">— Kundin aus Müllheim</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- KARRIERE -->
-<section id="karriere">
-  <div class="wrap">
-    <div class="center" style="max-width:720px;margin:0 auto 40px">
-      <div class="eyebrow">Karriere bei Imberi</div>
-      <h2>Plane mit uns deine Karriere</h2>
-      <p style="font-size:1.1rem">Erzähl uns von deinen Plänen — und wir bauen deine Zukunft im Handwerk gemeinsam. Werde Teil einer Familie, die seit 1987 für Qualität steht.</p>
-    </div>
-    <div class="kcards">
-      <div class="kcard" style="background-image:url('assets/karriere-team.jpg')"><div class="kic">🤝</div><h3>Familiäres Team</h3><p>Echtes Miteinander statt anonymer Konzern — bei uns kennt man sich beim Namen.</p></div>
-      <div class="kcard" style="background-image:url('assets/karriere-digital.jpg')"><div class="kic">📱</div><h3>Modern & digital</h3><p>Zeitgemäße Tools statt Papierchaos. Du lernst, wie Handwerk heute läuft.</p></div>
-      <div class="kcard" style="background-image:url('assets/karriere-region.jpg')"><div class="kic">📍</div><h3>Sicher in der Region</h3><p>Fester Arbeitsplatz im Markgräflerland, kurze Wege, dein Zuhause als Mittelpunkt.</p></div>
-    </div>
-    <div class="center">
-      <h3 style="margin-bottom:6px">Aktuell suchen wir</h3>
-      <div class="stellen">
-        <div class="stelle"><span>›</span>Anlagenmechaniker/in SHK</div>
-        <div class="stelle"><span>›</span>Fliesenleger/in</div>
-        <div class="stelle"><span>›</span>Badverkäufer/in</div>
-        <div class="stelle"><span>›</span>Meister/in SHK</div>
-        <div class="stelle"><span>›</span>Mitarbeiter/in Backoffice</div>
-        <div class="stelle"><span>›</span>Ausbildung / Azubi</div>
-      </div>
-      <p style="color:var(--grau);max-width:560px;margin:0 auto 24px">Nichts Passendes dabei? Wir freuen uns auch über deine Initiativbewerbung.</p>
-      <a class="btn" onclick="openModal('bewerbModal')" role="button" tabindex="0" style="cursor:pointer">Jetzt bewerben</a>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-band">
-  <div class="wrap">
-    <div class="eyebrow" style="color:var(--gold)">Ihr Bad. Ihr Moment.</div>
-    <h2>Erzählen Sie uns von Ihrem Traumbad</h2>
-    <p style="max-width:600px;margin:0 auto 26px">Unverbindlich, persönlich und zum verbindlichen Festpreis.<br>Wir freuen uns auf Sie.</p>
-    <a class="btn" onclick="openModal('beratModal')" role="button" tabindex="0" style="cursor:pointer">Jetzt Beratungsgespräch anfragen</a>
-  </div>
-</section>
-
-<!-- KONTAKT -->
-<section id="kontakt">
-  <div class="wrap"><div class="kontakt-grid">
-    <div>
-      <h2 style="font-size:2.9rem;margin-bottom:1.2rem">Kontakt</h2>
-      <p><strong>Imberi GmbH</strong><br>Haltinger Straße 22<br>79379 Müllheim<br><br>
-        Telefon: <a href="tel:+497631805790">+49 7631 805790</a><br>
-        E-Mail: <a href="mailto:info@imberi-baeder.de">info@imberi-baeder.de</a></p>
-      <p><strong>Öffnungszeiten</strong><br>Mo–Do 9–12 / 13–17 Uhr · Fr 9–12 / 13–15 Uhr<br>Sa nach Vereinbarung</p>
-    </div>
-    <div>
-      <h3>Schnellzugriff</h3>
-      <p style="color:var(--grau)">Alle Wege zu uns auf einen Blick — einfach das passende Anliegen wählen.</p>
-      <div class="quicknav">
-        <a class="btn btn-blau" onclick="openModal('telModal')" role="button" tabindex="0" style="cursor:pointer">📞 Anrufen</a>
-        <a class="btn btn-blau" onclick="openModal('mailModal')" role="button" tabindex="0" style="cursor:pointer">✉️ E-Mail</a>
-        <a class="btn btn-blau" onclick="openModal('beratModal')" role="button" tabindex="0" style="cursor:pointer">🛁 Beratungsgespräch</a>
-        <a class="btn btn-blau" onclick="openModal('serviceModal')" role="button" tabindex="0" style="cursor:pointer">🔧 Kundendienst</a>
-        <a class="btn btn-blau" onclick="openEnt()" role="button" tabindex="0" style="cursor:pointer">💧 Enthärtungsanlage</a>
-        <a class="btn btn-blau" onclick="openModal('bewerbModal')" role="button" tabindex="0" style="cursor:pointer">🙋 Bewerbung</a>
-      </div>
-    </div>
-  </div></div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="grid">
-      <div><h4>Imberi Bäder</h4><p style="opacity:.8">Familienbetrieb für Badgestaltung & Sanitär im Markgräflerland. Seit 1987 in Müllheim.</p></div>
-      <div><h4>Schnellzugriff</h4><a href="#leistungen">Leistungen</a><br><a href="#showroom">Showroom</a><br><a href="#karriere">Karriere</a><br><a href="#kontakt">Kontakt</a></div>
-      <div><h4>Qualität</h4><p style="opacity:.8">Partner im Verbund <strong>DIE BADGESTALTER</strong> — über 130 Fachbetriebe als Qualitätssiegel.</p></div>
-    </div>
-    <div class="feinprint">© 2026 Imberi GmbH · Haltinger Straße 22, 79379 Müllheim &nbsp;|&nbsp; <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> &nbsp;|&nbsp; <em>Entwurf V2 — nicht öffentlich</em></div>
   </div>
 </footer>
 
-<!-- POP-UPS -->
-<div class="modal-overlay" id="entModal" onclick="if(event.target===this)closeModal('entModal')">
-  <div class="modal modal-wide">
-    <button class="modal-close" onclick="closeModal('entModal')" aria-label="Schließen">&times;</button>
-    <img src="assets/banner-enthaertung.png" alt="Enthärtungsanlage" class="modal-banner">
-    <div class="modal-body">
-      <div class="eyebrow" style="color:var(--gold)">Enthärtungsanlagen</div>
-      <h2>Jetzt zu Enthärtung beraten lassen</h2>
-      <p>Weiches Wasser schützt Leitungen, spart Energie und schont Haut und Haar. Fordern Sie hier Ihre unverbindliche Beratung an.</p>
-      <iframe class="jotform" src="https://form.jotform.com/261522791355055" title="Enthärtungs-Beratung" loading="lazy"></iframe>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="beratModal" onclick="if(event.target===this)closeModal('beratModal')">
-  <div class="modal modal-wide">
-    <button class="modal-close" onclick="closeModal('beratModal')" aria-label="Schließen">&times;</button>
-    <div class="modal-body" style="padding:34px 36px 32px">
-      <div class="eyebrow" style="color:var(--gold)">Beratungsgespräch</div>
-      <h2>Erzählen Sie uns von Ihrem Traumbad</h2>
-      <p>Unverbindlich, persönlich und zum verbindlichen Festpreis. Wir melden uns zeitnah bei Ihnen.</p>
-      <iframe class="jotform" src="https://form.jotform.com/253353401678054" title="Beratungsgespräch" loading="lazy"></iframe>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="serviceModal" onclick="if(event.target===this)closeModal('serviceModal')">
-  <div class="modal modal-wide">
-    <button class="modal-close" onclick="closeModal('serviceModal')" aria-label="Schließen">&times;</button>
-    <div class="modal-body" style="padding:34px 36px 32px">
-      <div class="eyebrow" style="color:var(--gold)">Kundendienst & Service</div>
-      <h2>Schnell & unkompliziert anfragen</h2>
-      <p>Beschreiben Sie kurz Ihr Anliegen — wir melden uns umgehend und vereinbaren Ihren Serviceeinsatz.</p>
-      <iframe class="jotform" src="https://form.jotform.com/253352962368364" title="Kundendienst-Anfrage" loading="lazy"></iframe>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="bewerbModal" onclick="if(event.target===this)closeModal('bewerbModal')">
-  <div class="modal modal-wide">
-    <button class="modal-close" onclick="closeModal('bewerbModal')" aria-label="Schließen">&times;</button>
-    <div class="modal-body" style="padding:34px 36px 32px">
-      <div class="eyebrow" style="color:var(--gold)">Bewirb dich</div>
-      <h2>Plane mit uns deine Karriere</h2>
-      <p>Erzähl uns von deinen Plänen — wir freuen uns auf dich!</p>
-      <iframe class="jotform" src="https://form.jotform.com/260394285295365" title="Bewerbung" loading="lazy"></iframe>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="telModal" onclick="if(event.target===this)closeModal('telModal')">
-  <div class="modal" style="max-width:420px;text-align:center">
-    <button class="modal-close" onclick="closeModal('telModal')" aria-label="Schließen">&times;</button>
-    <div class="eyebrow" style="color:var(--gold)">Rufen Sie uns an</div>
-    <h2 style="margin-bottom:.4rem">Wir sind für Sie da</h2>
-    <p style="margin-bottom:20px">Gerne beraten wir Sie persönlich am Telefon:</p>
-    <a href="tel:+497631805790" style="font-size:1.7rem;font-weight:800;color:var(--blau)">07631 805790</a>
-  </div>
-</div>
-
-<div class="modal-overlay" id="mailModal" onclick="if(event.target===this)closeModal('mailModal')">
-  <div class="modal" style="max-width:460px;text-align:center">
-    <button class="modal-close" onclick="closeModal('mailModal')" aria-label="Schließen">&times;</button>
-    <div class="eyebrow" style="color:var(--gold)">Schreiben Sie uns</div>
-    <h2 style="margin-bottom:.4rem">Wir freuen uns auf Ihre Nachricht</h2>
-    <p style="margin-bottom:20px">Schreiben Sie uns einfach — wir melden uns zeitnah zurück:</p>
-    <a href="mailto:info@imberi-baeder.de" style="font-size:1.4rem;font-weight:800;color:var(--blau);word-break:break-all">info@imberi-baeder.de</a>
-  </div>
-</div>
-
-<script>
-  function openModal(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden';}
-  function closeModal(id){document.getElementById(id).classList.remove('open');document.body.style.overflow='';}
-  function openEnt(){openModal('entModal');}
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.modal-overlay.open').forEach(function(m){m.classList.remove('open');});document.body.style.overflow='';}});
-  function loadMap(){var b=document.getElementById('mapConsent');b.style.cursor='default';b.innerHTML='<iframe class="mapbox" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Haltinger%20Stra%C3%9Fe%2022,%2079379%20M%C3%BCllheim&output=embed" title="Imberi Showroom"></iframe>';}
-  /* Begrüßungs-Pop-up fuer Impulskaeufer */
-  window.addEventListener('DOMContentLoaded',function(){setTimeout(openEnt,1400);});
-</script>
 </body>
 </html>
